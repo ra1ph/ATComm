@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:id="@+id/lay">
+
+    <TextView
+        android:id="@+id/reply_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="false" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="database_name" />
+
+    <EditText
+        android:id="@+id/cmd_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="5" />
+
+    <Switch
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Execute" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radiobutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ttyUSB0" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radiobutton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ttyUSB1" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radiobutton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ttyUSB2"
+            android:checked="true" >
+        </RadioButton>
+    </RadioGroup>
+    
+    <Button android:id="@+id/refresh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Refresh" 
+        android:layout_margin="10dip"/>
+    <Button android:id="@+id/lock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Lock" 
+        android:layout_margin="10dip"/>
+    <EditText android:id="@+id/log"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:singleLine="false"/>"
+
+</LinearLayout>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="invisible"
+    android:id="@+id/lock_screen"
+    android:background="#FF000000" >
+
+    <Switch
+        android:id="@+id/sw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch off"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+    <Switch
+        android:id="@+id/sw2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch off"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"  />
+    <Button android:id="@+id/unlock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Unlock"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
+</RelativeLayout>
